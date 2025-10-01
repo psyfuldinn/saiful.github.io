@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhamad Saiful Din - Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #1e293b; color: #fff; padding: 50px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 48px; }
+    header p { font-size: 20px; margin-top: 10px; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    h2 { font-size: 32px; margin-bottom: 20px; text-align: center; }
+    .skills, .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    footer { background: #1e293b; color: #fff; text-align: center; padding: 30px 20px; }
+    a { color: #1e40af; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+  <header>
+    <h1>Muhamad Saiful Din</h1>
+    <p>System Support Specialist & Developer</p>
+    <p>I specialize in SQL, debugging, and developing enterprise healthcare systems like BBIS.<br>
+       Experienced in user support, troubleshooting, and implementing business logic for donor and inventory management systems.</p>
+  </header>
 
-    <section id="home">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p>I'm a [your profession, e.g., web developer] passionate about [your interests, e.g., building cool apps].</p>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Programming & Databases</h3>
+        <p>Java, JavaScript, SQL, PostgreSQL, Git</p>
+      </div>
+      <div class="card">
+        <h3>Support Tools</h3>
+        <p>Helpdesk, Ticketing Systems, UAT</p>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <p>Technical Training, Documentation, Team Leadership</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Here's a bit about my background, skills, and what drives me. Add your photo or resume link here!</p>
-        <ul>
-            <li>Skill 1: HTML/CSS/JS</li>
-            <li>Skill 2: Python</li>
-            <li>Skill 3: Design</li>
-        </ul>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>BBIS Enhancements</h3>
+        <p>Implemented Nat Discriminatory Testing, fixed discard reason handling, and supported hospitals with UAT and deployment.</p>
+      </div>
+      <div class="card">
+        <h3>Blood Transfusion Management</h3>
+        <p>Developed donor management module, improved barcode search, and implemented logic to capture latest test results after machine retests.</p>
+      </div>
+      <div class="card">
+        <h3>Cinema Ticket Claiming System</h3>
+        <p>Built a ticket claiming system prototype with guest support and daily claim limits.</p>
+      </div>
+      <div class="card">
+        <h3>Database Setup</h3>
+        <p>Created SQL scripts for Indonesian provinces and regions, ensuring consistency in production rollout.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of your awesome project. <a href="#">Live Demo</a> | <a href="#">GitHub</a></p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Another cool thing you built.</p>
-            </div>
-            <!-- Add more as needed -->
-        </div>
-    </section>
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience & Achievements</h2>
+    <ul>
+      <li>Conducted UAT testing for multiple enhancements.</li>
+      <li>Led a 2-person team in BBISv2 Indonesia rollout.</li>
+      <li>Delivered user training for hospital staff on Nat Discriminatory & Triplicate Testing.</li>
+      <li>Debugged & resolved machine result overwrite issue, ensuring reliable lab data.</li>
+    </ul>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p>Or email me at: [your.email@example.com]</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 [Your Name]. Built with ❤️ and GitHub Pages.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- Contact Section -->
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your.email@example.com">msaifuldin1810@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/psyfuldinn</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">www.linkedin.com/in/msaifuldin</a></p>
+  </footer>
 </body>
 </html>
